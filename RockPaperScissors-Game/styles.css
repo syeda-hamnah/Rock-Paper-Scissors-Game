@@ -1,0 +1,145 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Apply global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  /* font-family: 'Consolas'; */
+  background-color: #0a0324;
+  font-family: 'Afacad';font-size: 22px;
+}
+
+h1 {
+  font-size: 900px;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #660033;
+  word-spacing: 13px;
+  
+}
+
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 5px #fe39a2, 0 0 15px #fe39a2, 0 0 20px #fe39a2, 0 0 40px #fe39a2, 0 0 60px #f40584, 0 0 10px #e6208a, 0 0 98px #f40584;
+}
+
+/* Style scoreboard */
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  
+}
+
+.scoreboard > div {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border: 2px solid #660033;
+  border-radius: 10px;
+  color: #660033;
+  background-color: #ff207a;
+
+}
+
+/* Style choices */
+.choices {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.choice {
+  border: 2px solid #660033;
+  border-radius: 10px;
+  margin: 0 2rem;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px #fe39a2, 0 0 15px #fe39a2, 0 0 20px #fe39a2, 0 0 40px #fe39a2, 0 0 60px #f40584, 0 0 10px #e6208a, 0 0 98px #f40584;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.choice:active {
+  transform: scale(0.9);
+}
+
+.choice i {
+  color: #660033;
+  font-size: 50px;
+}
+
+/* Style result */
+.result {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #ff207a;
+}
+
+#computer-choice {
+  text-align: center;
+  font-size: 2rem;
+  color: #660033;
+}
+
+/* Style timer */
+.timer {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #ff207a;
+}
+
+/* Style play again button */
+.play-again {
+  display: block;
+  margin: 3rem auto 1rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff207a;
+  color: #660033;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.play-again:hover {
+  background-color: #993366;
+}
+
+.play-again:active {
+  transform: scale(0.9);
+}
+
+/* Add responsive design */
+@media only screen and (max-width: 600px) {
+  .choices {
+    flex-wrap: wrap;
+  }
+
+  .choice {
+    margin: 2rem 1rem;
+  }
+
+  .timer {
+    margin-top: 1rem;
+  }
+}
